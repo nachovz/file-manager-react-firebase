@@ -1,0 +1,9 @@
+ports:
+- port: 3000
+- port: 9009
+tasks:
+- init: npm install
+  command: npm install -g firebase-tools
+  command: >
+      cd functions
+      npm install
